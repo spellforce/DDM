@@ -1,0 +1,87 @@
+// table start
+.ant-table {
+  th, td {
+    white-space: nowrap;
+    word-break: keep-all;
+  }
+}
+
+.ant-table-small > .ant-table-content {
+  margin: 0 !important;
+}
+
+.ant-table-thead > tr > th .ant-table-column-sorter .ant-table-column-sorter-inner-full {
+  margin-top: -0.55em !important;
+}
+
+.header-search {
+  .ant-collapse-header {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+  }
+  &.ant-collapse-borderless {
+    background-color: unset;
+  }
+  .ant-collapse-item {
+    border-bottom: unset !important;
+  }
+}
+
+.ant-form-vertical .ant-form-item-label {
+  padding: 0 0 4px !important;
+}
+
+// modal table
+.ant-modal-content {
+  .ant-table-content {
+    overflow: auto;
+  }
+}
+
+.ant-form legend {
+  margin-bottom: 4px !important;
+}
+
+// table end
+
+// card
+.ant-card .ant-table-content {
+  overflow: auto;
+}
+
+// modal descriptions
+.ant-modal-body {
+  .ant-descriptions-view {
+    overflow: auto;
+  }
+  .ant-descriptions-item-content {
+    white-space: nowrap;
+  }
+}
+
+// button
+.ant-btn-sm {
+  padding: 0 7px !important;
+  &.ant-btn-loading:not(.ant-btn-circle):not(.ant-btn-circle-outline):not(.ant-btn-icon-only) {
+    padding-left: 24px !important;
+  }
+}
+
+.ant-btn-warning {
+  color: #fff;
+  background-color: #faad14;
+  border-color: #faad14;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+
+.ant-btn-warning:hover, .ant-btn-danger:focus {
+  color: #fff;
+  background-color: #faad14c5;
+  border-color: #faad14c5;
+}
+
+.ant-btn-icon-only.ant-btn-sm>* {
+  margin-left: -2px;
+}

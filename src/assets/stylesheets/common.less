@@ -1,0 +1,68 @@
+.nowrap-table {
+  th, td {
+    white-space: nowrap;
+    word-break: keep-all;
+  }
+}
+
+.operations {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  button {
+    margin-right: 8px;
+  }
+  button:last-child {
+    margin-right: 0;
+  }
+  &.center {
+    justify-content: center;
+  }
+  &.right {
+    justify-content: flex-end;
+  }
+}
+
+.table-row-active {
+  background-color: @primary-color !important;
+}
+
+.green {
+  color: green;
+}
+
+.full-modal {
+  width: auto !important;
+  position: absolute !important;
+  left: 40px;
+  right: 40px;
+  top: 80px !important;
+  .content {
+    max-height: calc(100vh - 280px);
+    overflow: auto;
+  }
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.no-padding-card {
+  .ant-card-body {
+    padding: 0 !important;
+  }
+}
+
+.small-padding-card {
+  .ant-card-body {
+    padding: 6px !important;
+  }
+
+  .search-form {
+    padding: 18px 30px;
+  }
+}
