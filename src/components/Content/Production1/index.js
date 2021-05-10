@@ -19,12 +19,15 @@ const data = {
   }]
 };
 
-export default ({ dataSource = data }) => {
+export default ({ dataSource = data, ...rest }) => {
   
   return (
-    <div className="production1">
+    <div className="production1" {...rest}>
       <div className="title-wrapper">
         <h1 className="title">{dataSource.title}</h1>
+        {
+          dataSource.subtitle && (typeof dataSource.subtitle === "string" ? <p>{dataSource.subtitle}</p> : dataSource.subtitle.map(v => <p key={v}>{v}</p>))
+        }
       </div>
       <Row gutter={[24, 40]} className="content">
         {

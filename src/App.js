@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { enquireScreen } from 'enquire-js';
 import Header from './Header';
 import Footer from './Footer';
@@ -7,6 +7,7 @@ import Home from './Home';
 import Page from './Page2';
 import { Nav00DataSource as ND} from './Header/data.source'
 import { Footer10DataSource as FD } from './Footer/data.source.js';
+import { Skeleton } from 'antd';
 
 let isMobile;
 enquireScreen((b) => {
@@ -31,8 +32,14 @@ class App extends Component {
       <Router>
         <div>
           <Header dataSource={ND} isMobile={this.state.isMobile} />
-          <Route exact path="/" component={Home} />
-          <Route path="/abc" component={Page} />
+          <React.Suspense fallback={<Skeleton active />}>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/ys" component={Page} />
+              <Route exact path="/yg" component={Page} />
+              <Route exact path="/qyys" component={Page} />
+            </Switch>
+          </React.Suspense>
           <Footer dataSource={FD} isMobile={this.state.isMobile} />
         </div>
       </Router>
