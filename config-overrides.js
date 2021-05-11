@@ -50,8 +50,8 @@ module.exports = override(
     format: `${chalk.green('Building')} [ ${chalk.green(':bar')} ] ':msg:' ${chalk.bold('(:percent)')}`,
     clear: true
   })),
-  addWebpackPlugin(new CompressionWebpackPlugin({
-    test: /\.js$|\.css$/,
-    threshold: 1024,
-  }))
+  // addWebpackPlugin(new CompressionWebpackPlugin({
+  //   test: /\.js$|\.css$/,
+  //   threshold: 1024,
+  // }))
 );
