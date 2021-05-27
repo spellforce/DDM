@@ -213,8 +213,8 @@ export default class Home extends React.Component {
           title: '我们的团队',
           gutter: [24, 80],
           span: 12,
-          width: 460,
-          height: 680,
+          width: 380,
+          height: 600,
           content: [
             {
               imgUrl: '/images/our/1.jpg',
@@ -233,6 +233,9 @@ export default class Home extends React.Component {
             },
             {
               imgUrl: '/images/our/6.jpg',
+            },
+            {
+              imgUrl: '/images/our/7.jpg',
             }
           ]
         }}

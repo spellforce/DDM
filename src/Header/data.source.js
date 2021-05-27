@@ -48,7 +48,7 @@ export const Nav00DataSource = {
         name: 'item2',
         className: 'header3-item',
         children: {
-          href: '/yy',
+          href: '/yuyin',
           children: [
             {
               children: (

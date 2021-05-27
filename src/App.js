@@ -5,6 +5,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Home from './Home';
 import Page from './Page2';
+import YuYin from './YuYin';
 import { Nav00DataSource as ND} from './Header/data.source'
 import { Footer10DataSource as FD } from './Footer/data.source.js';
 import { Skeleton } from 'antd';
@@ -36,7 +37,7 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/ys" component={Page} />
-              <Route exact path="/yg" component={Page} />
+              <Route exact path="/yuyin" component={YuYin} />
               <Route exact path="/qyys" component={Page} />
             </Switch>
           </React.Suspense>

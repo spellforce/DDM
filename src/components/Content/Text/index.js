@@ -24,12 +24,12 @@ export default ({ dataSource = data, ...rest }) => {
 
   return (
     <div className="tab-text" {...rest}>
-      <div className="title-wrapper">
+      { title && <div className="title-wrapper">
         <h1 className="title">{title}</h1>
         {
           subtitle && (typeof subtitle === "string" ? <p>{subtitle}</p> : subtitle.map(v => <p key={v}>{v}</p>))
         }
-      </div>
+      </div> }
       <Row gutter={gutter} className="content" justify="space-around" align="middle">
         {
           content.map((text, index) => (
