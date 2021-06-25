@@ -35,7 +35,7 @@ export const Footer10DataSource = {
         childWrapper: {
           children: [
             { name: 'link0', href: 'javascript:;', children: '电话: 0731-84027228' },
-            { name: 'link1', href: 'javascript:;', children: '网站:' },
+            { name: 'link1', href: 'http://www.dingdangmapx.com/', children: '网站: http://www.dingdangmapx.com/' },
             { name: 'link3', href: 'javascript:;', children: '地址：湖南长沙经济开发区开元东路59号博雅例外29楼'},
           ],
         },

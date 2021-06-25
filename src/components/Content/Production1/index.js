@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Button } from 'antd';
+import { Row, Col, Button, Modal } from 'antd';
 import './index.less';
 
 const data = {
@@ -43,7 +43,7 @@ export default ({ dataSource = data, ...rest }) => {
                   <div className="title">{item.content.title}</div>
                   <div className="subtitle">{item.content.subtitle}</div>
                   {item.content.extra}
-                  <Button type="primary" className="button">{item.button}</Button>
+                  <Button type="primary" className="button" onClick={() => Modal.info({title:"请拨打热线: 0731-84027228"})}>{item.button}</Button>
                 </Col>
               </Row>
             </Col>

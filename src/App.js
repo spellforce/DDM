@@ -6,6 +6,7 @@ import Footer from './Footer';
 import Home from './Home';
 import Page from './Page2';
 import YuYin from './YuYin';
+import QYYY from './QYYY';
 import { Nav00DataSource as ND} from './Header/data.source'
 import { Footer10DataSource as FD } from './Footer/data.source.js';
 import { Skeleton } from 'antd';
@@ -38,7 +39,7 @@ class App extends Component {
               <Route exact path="/" component={Home} />
               <Route exact path="/ys" component={Page} />
               <Route exact path="/yuyin" component={YuYin} />
-              <Route exact path="/qyys" component={Page} />
+              <Route exact path="/qyyy" component={QYYY} />
             </Switch>
           </React.Suspense>
           <Footer dataSource={FD} isMobile={this.state.isMobile} />

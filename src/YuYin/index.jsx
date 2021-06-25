@@ -4,26 +4,14 @@ import React from 'react';
 import { enquireScreen } from 'enquire-js';
 
 import Banner1 from './Banner1';
-import Content1 from './Content1';
 import Point from './Point';
 import {
   Banner10DataSource,
-  Content10DataSource,
 } from './data.source';
 import './less/antMotionStyle.less';
 import Production1 from '../components/Content/Production1';
-import Picture from '../components/Content/Picture';
 import Text from '../components/Content/Text';
-import ScrollPicture from '../components/Content/ScrollPicture';
-import f1 from './images/1.jpg';
 import { Tabs } from 'antd';
-// import f2 from './images/f2.jpg';
-// import f3 from './images/f3.jpg';
-// import f4 from './images/f4.jpg';
-// import f5 from './images/f5.jpg';
-// import f6 from './images/f6.jpg';
-// import f7 from './images/f7.jpg';
-// import f8 from './images/f8.jpg';
 
 let isMobile;
 enquireScreen((b) => {
